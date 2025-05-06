@@ -1,0 +1,248 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* End Reset */
+
+/* COLORS */
+:root {
+    --blue-900: #0B0D17;
+    --blue-300: #D0D6F9;
+    --white: #FFFFFF;
+}
+
+/* TYPOGRAPHY */
+.bellefair-regular {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-condensed-regular {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.barlow-regular {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-preset-1 {
+    font-size: 144px;
+    line-height: 171.9%;
+    letter-spacing: 0px;
+}
+
+.text-preset-2 {
+    font-size: 100px;
+    line-height: 114.6%;
+    letter-spacing: 0px;
+}
+
+.text-preset-3 {
+    font-size: 56px;
+    line-height: 64.2%;
+    letter-spacing: 0px;
+}
+
+.text-preset-4 {
+    font-size: 32px;
+    line-height: 36.7%;
+    letter-spacing: 0px;
+}
+
+.text-preset-5 {
+    font-size: 28px;
+    line-height: 33.6%;
+    letter-spacing: 4px;
+}
+
+.text-preset-6 {
+    font-size: 28px;
+    line-height: 32.1%;
+    letter-spacing: 0px;
+}
+
+.text-preset-7 {
+    font-size: 14px;
+    line-height: 16.8%;
+    letter-spacing: 2px;
+}
+
+.text-preset-8 {
+    font-size: 16px;
+    line-height: 19.2%;
+    letter-spacing: 2px;
+}
+
+.text-preset-9 {
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0px;
+}
+
+
+/* General Styling */
+
+body {
+    min-height: 100vh;
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    height: 136px;
+}
+
+main {
+    flex: 1;
+}
+
+.flex-container {
+    min-height: 100%;
+    display: flex;
+}
+
+.flex-container-col {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HOMEPAGE */
+.bg-img {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    min-height: 100%;
+}
+
+/* MAIN NAVBAR */
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav #logo {
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* HERO */
+
+#hero .flex-container {
+    min-height: 100vh;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12rem;
+}
+
+#hero .flex-container-col {
+    max-width: 540px;
+}
+
+#hero h1 {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+#hero h2,
+#hero p {
+    color: var(--blue-300);
+}
+
+#hero button {
+    flex-shrink: 0;
+    width: 272px;
+    height: 272px;
+    border-radius: 100%;
+    text-transform: uppercase;
+    color: var(--blue-900);
+    border: 1px var(--blue-900) solid;
+}
