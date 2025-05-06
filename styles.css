@@ -181,37 +181,67 @@ main {
 }
 
 /* HOMEPAGE */
-.bg-img {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("./assets/home/background-home-desktop.jpg");
-    min-height: 100%;
-}
 
 /* MAIN NAVBAR */
 nav {
     height: 100%;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper {
+    flex: 1;
+    height: 48px;
+    padding-left: 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    gap: 64px;
 }
 
-nav #logo {
-    margin-right: auto;
+#logo {
+    display: block;
+}
+
+.logo-wrapper hr {
+    flex: 1;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(256, 256, 256, 0.25);
+    margin-left: 1rem;
+    z-index: 100;
+}
+
+.menu-wrapper {
+    flex: 1;
+    height: 96px;
+    padding: 0 64px;
+    background-color: rgb(256 256 256 /0.05);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -32px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 48px;
 }
 
 nav ul li a {
     text-decoration: none;
+    color: var(--white);
 }
+
+.bold {
+    font-weight: bold;
+}
+
+
 
 /* HERO */
 
@@ -223,12 +253,16 @@ nav ul li a {
     padding: 0 12rem;
 }
 
-#hero .flex-container-col {
+#hero .text-wrapper {
     max-width: 540px;
 }
 
 #hero h1 {
     color: var(--white);
+    text-transform: uppercase;
+}
+
+#hero h2 {
     text-transform: uppercase;
 }
 
