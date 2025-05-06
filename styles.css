@@ -12,40 +12,40 @@
     --color-white: #ffffff;
     --color-blue300: #d0d6f9;
     --color-blue900: #0b0d17;
-    --spacing-100: 8;
-    --spacing-200: 16;
-    --spacing-300: 24;
-    --spacing-400: 32;
-    --spacing-500: 40;
-    --spacing-600: 48;
-    --spacing-800: 64;
-    --spacing-1000: 80;
-    --spacing-1200: 96;
-    --spacing-1600: 128;
-    --spacing-50: 4;
-    --spacing-25: 2;
-    --spacing-150: 12;
-    --fontsize-desktop-textpreset1: 144;
-    --fontsize-desktop-textpreset2: 96;
-    --fontsize-desktop-textpreset3: 56;
-    --fontsize-desktop-textpreset4: 32;
-    --fontsize-desktop-textpreset5: 28;
-    --fontsize-desktop-textpreset6: 28;
-    --fontsize-desktop-textpreset7: 14;
-    --fontsize-desktop-textpreset8: 16;
-    --fontsize-desktop-textpreset9: 18;
-    --fontsize-tablet-textpreset2: 80;
-    --fontsize-tablet-textpreset9: 16;
-    --fontsize-tablet-textpreset5: 20;
-    --fontsize-tablet-textpreset4: 24;
-    --fontsize-tablet-textpreset3: 40;
-    --fontsize-mobile-textpreset2: 56;
-    --fontsize-mobile-textpreset3: 24;
-    --fontsize-mobile-textpreset4: 18;
-    --fontsize-mobile-textpreset6: 16;
-    --fontsize-mobile-textpreset9: 15;
-    --fontsize-mobile-textpreset1: 80;
-    --fontsize-mobile-textpreset8: 14;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-800: 64px;
+    --spacing-1000: 80px;
+    --spacing-1200: 96px;
+    --spacing-1600: 128px;
+    --spacing-50: 4px;
+    --spacing-25: 2px;
+    --spacing-150: 12px;
+    --fontsize-desktop-textpreset1: 144px;
+    --fontsize-desktop-textpreset2: 96px;
+    --fontsize-desktop-textpreset3: 56px;
+    --fontsize-desktop-textpreset4: 32px;
+    --fontsize-desktop-textpreset5: 28px;
+    --fontsize-desktop-textpreset6: 28px;
+    --fontsize-desktop-textpreset7: 14px;
+    --fontsize-desktop-textpreset8: 16px;
+    --fontsize-desktop-textpreset9: 18px;
+    --fontsize-tablet-textpreset2: 80px;
+    --fontsize-tablet-textpreset9: 16px;
+    --fontsize-tablet-textpreset5: 20px;
+    --fontsize-tablet-textpreset4: 24px;
+    --fontsize-tablet-textpreset3: 40px;
+    --fontsize-mobile-textpreset2: 56px;
+    --fontsize-mobile-textpreset3: 24px;
+    --fontsize-mobile-textpreset4: 18px;
+    --fontsize-mobile-textpreset6: 16px;
+    --fontsize-mobile-textpreset9: 15px;
+    --fontsize-mobile-textpreset1: 80px;
+    --fontsize-mobile-textpreset8: 14px;
 }
 
 /* ALL STYLES FROM FIGMA */
@@ -209,12 +209,16 @@ body {
 
 header {
     width: 100%;
-    align-self: stretch;
     padding-top: var(--spacing-500);
 }
 
 main {
     flex: 1
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
 }
 
 .flex-container {
@@ -237,15 +241,21 @@ main {
 }
 
 .logo-wrapper hr {
+    flex: 1 0 0;
     height: 1px;
     opacity: 0.25;
     background-color: var(--color-white);
+    margin-right: calc(var(--spacing-400)*-1);
+    z-index: 2;
 }
 
 .menu-wrapper {
-    flex: 1;
-    padding: 0 var(--spacing-800);
-
+    flex: 1 0 0;
+    padding: var(--spacing-400) var(--spacing-800);
+    min-width: 664px;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
 }
 
 .menu-wrapper ul {
@@ -256,6 +266,7 @@ main {
 .menu-wrapper ul li a {
     text-decoration: none;
     color: var(--color-white);
+    text-transform: uppercase;
 }
 
 /* Homepage */
