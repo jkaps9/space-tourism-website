@@ -1,0 +1,268 @@
+/* Basic Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES FROM FIGMA */
+
+:root {
+    --color-white: #ffffff;
+    --color-blue300: #d0d6f9;
+    --color-blue900: #0b0d17;
+    --spacing-100: 8;
+    --spacing-200: 16;
+    --spacing-300: 24;
+    --spacing-400: 32;
+    --spacing-500: 40;
+    --spacing-600: 48;
+    --spacing-800: 64;
+    --spacing-1000: 80;
+    --spacing-1200: 96;
+    --spacing-1600: 128;
+    --spacing-50: 4;
+    --spacing-25: 2;
+    --spacing-150: 12;
+    --fontsize-desktop-textpreset1: 144;
+    --fontsize-desktop-textpreset2: 96;
+    --fontsize-desktop-textpreset3: 56;
+    --fontsize-desktop-textpreset4: 32;
+    --fontsize-desktop-textpreset5: 28;
+    --fontsize-desktop-textpreset6: 28;
+    --fontsize-desktop-textpreset7: 14;
+    --fontsize-desktop-textpreset8: 16;
+    --fontsize-desktop-textpreset9: 18;
+    --fontsize-tablet-textpreset2: 80;
+    --fontsize-tablet-textpreset9: 16;
+    --fontsize-tablet-textpreset5: 20;
+    --fontsize-tablet-textpreset4: 24;
+    --fontsize-tablet-textpreset3: 40;
+    --fontsize-mobile-textpreset2: 56;
+    --fontsize-mobile-textpreset3: 24;
+    --fontsize-mobile-textpreset4: 18;
+    --fontsize-mobile-textpreset6: 16;
+    --fontsize-mobile-textpreset9: 15;
+    --fontsize-mobile-textpreset1: 80;
+    --fontsize-mobile-textpreset8: 14;
+}
+
+/* ALL STYLES FROM FIGMA */
+.desktop-textpreset1 {
+    font-size: 144px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+}
+
+.desktop-textpreset2 {
+    font-size: 96px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+}
+
+.desktop-textpreset3 {
+    font-size: 56px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.desktop-textpreset4 {
+    font-size: 32px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.desktop-textpreset5 {
+    font-size: 28px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.desktop-textpreset6 {
+    font-size: 28px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.desktop-textpreset7 {
+    font-size: 14px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: uppercase;
+}
+
+.desktop-textpreset8 {
+    font-size: 16px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.desktop-textpreset8bold {
+    font-size: 16px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2.700000047683716px;
+}
+
+.desktop-textpreset9 {
+    font-size: 18px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    line-height: 179.99999523162842;
+}
+
+.tablet-textpreset2 {
+    font-size: 80px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+}
+
+.tablet-textpreset3 {
+    font-size: 40px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.tablet-textpreset4 {
+    font-size: 24px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.tablet-textpreset5 {
+    font-size: 20px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.tablet-textpreset9 {
+    font-size: 16px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    line-height: 179.99999523162842;
+}
+
+.mobile-textpreset1 {
+    font-size: 80px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+}
+
+.mobile-textpreset2 {
+    font-size: 56px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+}
+
+.mobile-textpreset3 {
+    font-size: 24px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.mobile-textpreset4 {
+    font-size: 18px;
+    font-family: Bellefair, sans-serif;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.mobile-textpreset6 {
+    font-size: 16px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.mobile-textpreset8 {
+    font-size: 14px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.mobile-textpreset9 {
+    font-size: 15px;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    line-height: 179.99999523162842;
+}
+
+
+
+/* Repeatable Styles */
+body {
+    min-height: 100vh;
+    color: var(--color-white);
+}
+
+header {
+    width: 100%;
+    align-self: stretch;
+    padding-top: var(--spacing-500);
+}
+
+main {
+    flex: 1
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrapper {
+    padding-left: var(--spacing-800);
+    flex: 1 0 0;
+    gap: var(--spacing-800);
+}
+
+.logo-wrapper hr {
+    height: 1px;
+    opacity: 0.25;
+    background-color: var(--color-white);
+}
+
+.menu-wrapper {
+    flex: 1;
+    padding: 0 var(--spacing-800);
+
+}
+
+.menu-wrapper ul {
+    list-style: none;
+    gap: var(--spacing-600);
+}
+
+.menu-wrapper ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/* Homepage */
+#home-page {
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* TODO: Lightray?? */
+}
