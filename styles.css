@@ -280,6 +280,7 @@ main>div {
 
 .menu-wrapper>ul>li {
     align-self: stretch;
+    border-bottom: 3px rgba(255, 255, 255, 0.0) solid;
 }
 
 .menu-wrapper ul li a {
