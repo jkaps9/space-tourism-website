@@ -210,6 +210,7 @@ body {
 header {
     width: 100%;
     padding-top: var(--spacing-500);
+
 }
 
 main {
@@ -220,6 +221,18 @@ h1,
 h2 {
     text-transform: uppercase;
 }
+
+header>.flex-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>div {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
 
 .flex-container {
     display: flex;
@@ -251,23 +264,39 @@ h2 {
 
 .menu-wrapper {
     flex: 1 0 0;
-    padding: var(--spacing-400) var(--spacing-800);
+    padding: 0 var(--spacing-800);
     min-width: 664px;
+    min-height: var(--spacing-1200);
     justify-content: flex-end;
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(40px);
 }
 
-.menu-wrapper ul {
+.menu-wrapper>ul {
     list-style: none;
     gap: var(--spacing-600);
+    align-self: stretch;
+}
+
+.menu-wrapper>ul>li {
+    align-self: stretch;
 }
 
 .menu-wrapper ul li a {
     text-decoration: none;
     color: var(--color-white);
     text-transform: uppercase;
+    align-self: center;
 }
+
+.menu-wrapper ul li:hover {
+    border-bottom: 3px rgba(255, 255, 255, 0.5) solid;
+}
+
+.menu-wrapper ul li a>span {
+    margin-right: var(--spacing-150);
+}
+
 
 /* Homepage */
 #home-page {
@@ -276,4 +305,8 @@ h2 {
     background-position: center;
     background-size: cover;
     /* TODO: Lightray?? */
+}
+
+#home-page .menu-wrapper ul li:first-child {
+    border-bottom: 3px rgba(255, 255, 255) solid;
 }
