@@ -14,10 +14,10 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body id="home-page" class="flex-container-col">
+<body>
   <header>
-    <div class="flex-container">
-      <div class="logo-wrapper flex-container">
+    <div class="navigation">
+      <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
           <g fill="none" fill-rule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
@@ -25,40 +25,33 @@
               d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z" />
           </g>
         </svg>
-
         <hr>
       </div>
 
-      <div class="menu-wrapper flex-container">
-        <ul class="flex-container desktop-textpreset8">
-          <li class="flex-container-col">
-            <a href="/"><span class="desktop-textpreset8bold">00</span> Home</a>
-          </li>
-          <li class="flex-container-col">
-            <a href=""><span class="desktop-textpreset8bold">01</span> Destination</a>
-          </li>
-          <li class="flex-container-col">
-            <a href=""><span class="desktop-textpreset8bold">02</span> Crew</a>
-          </li>
-          <li class="flex-container-col">
-            <a href=""><span class="desktop-textpreset8bold">03</span> Technology</a>
-          </li>
+      <nav>
+        <ul>
+          <li class="active"><a href="/"><span class="desktop-textpreset8bold">00</span> Home</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">01</span> Destination</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">02</span> Crew</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">03</span> Technology</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
 
   <main>
     <section id="hero">
-      <div class="flex-container">
-        <div class="text-wrapper flex-container-col">
+      <div class="content">
+        <div class="text-wrapper">
           <h2 class="desktop-textpreset5">So, you want to travel to</h2>
           <h1 class="desktop-textpreset1">Space</h1>
           <p class="desktop-textpreset9">Let’s face it; if you want to go to space, you might as well genuinely go to
             outer space and not hover kind of on the edge of it. Well sit back, and relax
             because we’ll give you a truly out of this world experience!</p>
         </div>
-        <button id="explore-button" class="desktop-textpreset4">Explore</button>
+        <div class="button-wrapper">
+          <button id="explore-button" class="desktop-textpreset4">Explore</button>
+        </div>
       </div>
     </section>
   </main>
