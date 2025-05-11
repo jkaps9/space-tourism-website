@@ -245,7 +245,7 @@ hr {
     z-index: 100;
 }
 
-nav {
+#desktop-menu {
     flex: 1;
     margin-left: -32px;
     /* padding: 0px 64px; */
@@ -258,13 +258,13 @@ nav {
 
 }
 
-nav>ul {
+#desktop-menu>ul {
     display: flex;
     gap: 48px;
     padding: 0px 64px;
 }
 
-nav>ul>li {
+#desktop-menu>ul>li {
     height: 96px;
     display: flex;
     flex-direction: column;
@@ -274,12 +274,12 @@ nav>ul>li {
     border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 
-nav>ul>li:hover {
+#desktop-menu>ul>li:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.50);
 }
 
 /* Active class needs to be placed after hover in CSS for higher specificity */
-nav>ul>li.active {
+#desktop-menu>ul>li.active {
     border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
@@ -287,6 +287,14 @@ nav a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+}
+
+#hamburger {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
 }
 
 /* Main */
@@ -384,8 +392,22 @@ main {
         display: none;
     }
 
-    nav {
+    #desktop-menu {
         display: none;
+    }
+
+    .logo {
+        padding-left: 24px;
+    }
+
+    #logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    #hamburger {
+        display: block;
+        padding-right: 24px;
     }
 
     /* MAIN */
