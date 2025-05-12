@@ -377,12 +377,12 @@ h2 {
 }
 
 /* DESTINATION PAGE */
-body#destination-page {
+body.destination-page {
     background-image: url("./assets/destination/background-destination-desktop.jpg");
     color: var(--color-white);
 }
 
-#destination-page>main {
+.destination-page>main {
     padding: 48px 0;
 }
 
@@ -450,6 +450,59 @@ h2>span {
     color: #D0D6F9;
 }
 
+
+/* TRIAL */
+main#destination-titan div {
+    border: 1px darkred solid;
+}
+
+main#destination-titan {
+    padding: 48px 0;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    border: 1px yellow solid;
+}
+
+main#destination-titan .content-container {
+    flex: 1;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+main#destination-titan .page-title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+main#destination-titan span {
+    padding-right: 0;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+    font-weight: 700;
+}
+
+main#destination-titan .content {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+
+main#destination-titan .content>* {
+    width: 100%;
+}
+
+main#destination-titan .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Media queries */
 
