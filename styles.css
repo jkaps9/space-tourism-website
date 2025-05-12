@@ -264,7 +264,7 @@ hr {
     padding: 0px 64px;
 }
 
-#desktop-menu>ul>li {
+li {
     height: 96px;
     display: flex;
     flex-direction: column;
@@ -274,16 +274,16 @@ hr {
     border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
 
-#desktop-menu>ul>li:hover {
+li:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.50);
 }
 
 /* Active class needs to be placed after hover in CSS for higher specificity */
-#desktop-menu>ul>li.active {
+li.active {
     border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
-nav a {
+a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -333,12 +333,12 @@ main {
     color: #D0D6F9;
 }
 
-#hero>.content>.text-wrapper>h1 {
+h1 {
     color: #fff;
     text-transform: uppercase;
 }
 
-#hero>.content>.text-wrapper>h2 {
+h2 {
     text-transform: uppercase;
 }
 
@@ -375,6 +375,81 @@ main {
     color: rgba(11, 13, 23, 0.5);
     cursor: pointer;
 }
+
+/* DESTINATION PAGE */
+body#destination-page {
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    color: var(--color-white);
+}
+
+#destination-page>main {
+    padding: 48px 0;
+}
+
+#destination-content {
+    flex: 1;
+    align-self: stretch;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h2>span {
+    padding-right: 24px;
+    letter-spacing: 4.725px;
+    opacity: 0.25;
+    font-weight: 700;
+}
+
+#destination-details {
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+#destination-picture {
+    height: 480px;
+    width: 480px;
+}
+
+#explanation {
+    flex: 1;
+    align-self: stretch;
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#explanation>ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    text-transform: uppercase;
+}
+
+#explanation li {
+    height: 32px;
+}
+
+#explanation .text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#explanation .text-wrapper p {
+    color: #D0D6F9;
+}
+
 
 /* Media queries */
 

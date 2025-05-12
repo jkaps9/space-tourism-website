@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="../styles.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+<body id="destination-page">
 
-  01 Pick your destination
+  <header>
+    <div class="navigation">
+      <div class="logo">
+        <img src="../assets/shared/logo.svg" alt="space tourism logo" id="logo">
+        <hr>
+      </div>
 
-  Moon
-  Mars
-  Europa
-  Titan
+      <nav id="desktop-menu">
+        <ul>
+          <li><a href="/"><span class="desktop-textpreset8bold">00</span> Home</a></li>
+          <li class="active"><a href=""><span class="desktop-textpreset8bold">01</span> Destination</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">02</span> Crew</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">03</span> Technology</a></li>
+        </ul>
+      </nav>
+      <img src="./assets/shared/icon-hamburger.svg" alt="mobile menu" id="hamburger">
+      <nav id="mobile-menu">
+        <ul>
+          <li><a href="/"><span class="desktop-textpreset8bold">00</span> Home</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">01</span> Destination</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">02</span> Crew</a></li>
+          <li><a href=""><span class="desktop-textpreset8bold">03</span> Technology</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="destination-content">
+      <!-- <div class="content"> -->
+      <h2 id="destination-title" class="desktop-textpreset5"><span>01</span>Pick your destination </h2>
+      <div id="destination-details">
 
-  Moon
+        <img src="../assets/destination/image-moon.webp" alt="picture of the moon" id="destination-picture">
+        <div id="explanation">
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+          <ul>
+            <li class="active"><a href="./destination-moon.html">Moon</a></li>
+            <li>Mars</li>
+            <li>Europa</li>
+            <li>Titan</li>
+          </ul>
 
-  Avg. distance
-  384,400 km
 
-  Est. travel time
-  3 days
+          <div class="text-wrapper">
+            <h1 class="desktop-textpreset2">Moon</h1>
+
+            <p class="desktop-textpreset9">See our planet as you’ve never seen it before. A perfect relaxing trip away
+              to help
+              regain perspective and come back refreshed. While you’re there, take in some history
+              by visiting the Luna 2 and Apollo 11 landing sites.</p>
+          </div>
+          Avg. distance
+          384,400 km
+
+          Est. travel time
+          3 days
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+  </main>
 </body>
+
 </html>
